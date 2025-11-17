@@ -7,7 +7,7 @@ All analysis and code are available in the notebook:
 
 ---
 
-# 🧹 1. Data Cleaning (What Was Done)
+# 1. Data Cleaning (What Was Done)
 
 The raw dataset contained missing values, inconsistencies, special characters, and incorrect data types. Below is the exact cleaning process followed:
 
@@ -65,7 +65,7 @@ The visuals below summarize the EDA process.
 
 ---
 
-# 📸 3. Visualizations
+# 3. Visualizations
 
 ### 1️⃣ Dataset Overview
 ![Dataset Overview](images/1-data-overview.png)
@@ -101,7 +101,7 @@ The visuals below summarize the EDA process.
 
 ---
 
-# 🧠 4. Key Insights (Summary)
+# 4. Key Insights (Summary)
 
 - **Family is the largest category (~18%)**, followed by Games (~11%).  
 - **Free apps dominate the store (>90%).**  
@@ -123,7 +123,7 @@ All code, analysis, and visualizations are available inside the notebook.
 
 ---
 
-# 📦 Dataset Source
+#  Dataset Source
 Public dataset used for this project:  
 https://raw.githubusercontent.com/krishnaik06/playstore-Dataset/main/googleplaystore.csv
 
