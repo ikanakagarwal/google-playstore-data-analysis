@@ -138,9 +138,6 @@ The visuals below summarize the EDA process.
 
 ---
 
-
----
-
 # 4. Key Insights (Summary)
 
 - **Family is the largest category (~18%)**, followed by Games (~11%).  
@@ -149,17 +146,6 @@ The visuals below summarize the EDA process.
 - **Paid apps tend to have slightly higher median ratings than free apps.**  
 - **Size does not strongly influence rating.**  
 - **Reviews and Installs are strongly correlated.**
-
----
-
-# ▶️ How to View the Project
-
-1. Download or clone the repository  
-2. Open the file:  
-   **`playstore-analysis.ipynb`**  
-3. Run it in Jupyter Notebook / Jupyter Lab / VS Code
-
-All code, analysis, and visualizations are available inside the notebook.
 
 ---
 
