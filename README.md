@@ -7,44 +7,36 @@ All analysis and code are available in the notebook:
 
 ---
 
-# 1. Data Cleaning (What Was Done)
+# 1. Data Cleaning 
 
 The raw dataset contained missing values, inconsistencies, special characters, and incorrect data types. Below is the exact cleaning process followed:
 
 ### 🔹 Initial Inspection
 - Reviewed dataset structure using `head()`, `info()` and missing value summary.
 - Identified that many numeric features were incorrectly stored as **object/string types**.
-
 ### 🔹 Handling Missing Values
 - Missing values detected in: Rating, Type, Android Version, Current Version.
 - These were documented and preserved or cleaned depending on analysis needs.
-
 ### 🔹 Cleaning Individual Columns
 #### ✔ **Reviews**
 - Found non-numeric values (e.g., `"3.0M"`).
 - Removed invalid row and converted Reviews to integer.
-
 #### ✔ **Size**
 - Values like `"8.0M"`, `"19k"`, and `"Varies with device"`.
 - Replaced `"Varies with device"` with `NaN`.
 - Standardized sizes to numeric MB/KB format.
-
 #### ✔ **Installs**
 - Contained symbols like `"+"` and commas (`"1,000+"`).
 - Removed special characters and converted to integer.
-
 #### ✔ **Price**
 - Contained `$` symbol.
 - Cleaned and converted to float.
-
 #### ✔ **Last Updated**
 - Converted to proper datetime.
 - Extracted **Day**, **Month**, and **Year** from the date.
-
 ### 🔹 Removing Duplicates
 - Found **1,181 duplicate app names**.
 - Removed all duplicate entries, keeping only the first occurrence.
-
 ### 🔹 Final Feature Classification
 - **Numerical Columns:** Rating, Reviews, Size, Installs, Price, Day, Month, Year  
 - **Categorical Columns:** Category, Type, Content Rating, Genres  
@@ -54,7 +46,6 @@ The raw dataset contained missing values, inconsistencies, special characters, a
 # 🔍 2. Exploratory Data Analysis (EDA)
 
 The goal of the EDA was to understand:
-
 - App category distribution  
 - How ratings are distributed  
 - Whether higher installs relate to higher ratings  
