@@ -65,39 +65,79 @@ The visuals below summarize the EDA process.
 
 ---
 
-# 3. Visualizations
+ # 📸 3. Visualizations & Insights
 
-### 1️⃣ Dataset Overview
-![Dataset Overview](images/1-data-overview.png)
+### 1️⃣ Univariate Analysis — Numerical Features
+![Univariate Numerical](images/univariate-numerical.png)
 
----
-
-### 2️⃣ Missing Values Heatmap
-![Missing Heatmap](images/2-missing-heatmap.png)
-
----
-
-### 3️⃣ Category Distribution
-![Category Distribution](images/3-category-count.png)
-**Insight:** Family, Games, and Tools categories dominate the Play Store.
+**Key Observations:**  
+- **Rating** and **Last Updated Year** are **left-skewed**.  
+- **Reviews, Size, Installs, and Price** are **right-skewed**, indicating outliers and high-value concentration.  
+- Numerical features vary widely and require scaling/transformations for modeling.
 
 ---
 
-### 4️⃣ Ratings Distribution
-![Ratings Distribution](images/4-ratings-distribution.png)
-**Insight:** Most apps have ratings between **4.0–4.5**, showing a left-skewed distribution.
+### 2️⃣ Univariate Analysis — Categorical Features
+![Categorical Univariate](images/univariate-categorical.png)
+
+**Key Observations:**  
+- Majority of apps on the Play Store are **Free**.  
+- **Everyone** is the most common content rating category.  
+- Teen, Mature 17+, Adults Only 18+, and Unrated apps form very small percentages.
 
 ---
 
-### 5️⃣ Installs vs Rating
-![Installs vs Rating](images/5-installs-vs-rating.png)
-**Insight:** Apps with higher installs tend to have better ratings.
+### 3️⃣ Category Distribution (Pie Chart)
+![Category Popularity](images/category-popularity.png)
+
+**Insights:**  
+- **Family (~19%)**, **Games (~10%)**, and **Tools (~9%)** dominate the store.  
+- Categories like **Beauty**, **Comics**, **Art & Design**, and **Weather** have very few apps.  
+- Indicates a high concentration of general-purpose consumer apps.
 
 ---
 
-### 6️⃣ Correlation Heatmap
-![Correlation Heatmap](images/6-correlation-heatmap.png)
-**Insight:** Installs and Reviews show strong correlation; Price has minimal correlation with Rating.
+### 4️⃣ Top 10 App Categories (Bar Chart)
+![Top 10 Categories](images/top10-categories.png)
+
+**Insights:**  
+- **Family** category contains the highest number of apps.  
+- **Games**, **Tools**, **Medical**, **Business**, and **Productivity** follow.  
+- Niche categories represent a small share of total apps.
+
+---
+
+### 5️⃣ Categories with the Highest Number of Installations
+![Category Installations](images/category-installations.png)
+
+**Insights:**  
+- **GAME** category leads with nearly **35 billion installations**.  
+- **Communication** apps are next due to widely used services (WhatsApp, Skype, Gmail).  
+- Tools, Productivity, Social, and Photography categories also see high install volumes.
+
+---
+
+### 6️⃣ Top 5 Most Installed Apps in Popular Categories
+![Top Apps by Category](images/top-apps-by-category.png)
+
+**Category-wise Insights:**
+
+- **GAME:** *Subway Surfers* is the most installed game.  
+- **COMMUNICATION:** *Hangouts* leads, followed by *WhatsApp* and *Skype*.  
+- **PRODUCTIVITY:** *Google Drive* dominates with 1B+ installs.  
+- **SOCIAL:** *Instagram* leads, followed by *Facebook* and *Google+*.
+
+---
+
+### 7️⃣ Apps With Perfect 5-Star Rating
+
+**Insights:**  
+- There are **271 apps** with a perfect **5.0 rating**.  
+- The top-rated app is **"CT Brain Interpretation"** from the **Family** category.  
+- Perfect ratings are rare and usually appear in niche apps with highly satisfied users.
+
+---
+
 
 ---
 
