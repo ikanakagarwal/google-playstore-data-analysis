@@ -3,7 +3,7 @@
 This project focuses on cleaning and analyzing the **Google Play Store apps dataset** to understand patterns in app categories, installs, ratings, pricing, and user behavior.
 
 All analysis and code are available in the notebook:  
-👉 **`playstore-analysis.ipynb`**
+👉 **`GooglePlaystore.ipynb`**
 
 ---
 
