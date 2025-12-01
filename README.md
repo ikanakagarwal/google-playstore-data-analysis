@@ -1,9 +1,9 @@
-# 📊 Google Play Store Apps Data Analysis
+# Google Play Store Apps Data Analysis
 
 This project focuses on cleaning and analyzing the **Google Play Store apps dataset** to understand patterns in app categories, installs, ratings, pricing, and user behavior.
 
 All analysis and code are available in the notebook:  
-👉 **`GooglePlaystore.ipynb`**
+**`GooglePlaystore.ipynb`**
 
 ---
 
@@ -11,39 +11,39 @@ All analysis and code are available in the notebook:
 
 The raw dataset contained missing values, inconsistencies, special characters, and incorrect data types. Below is the exact cleaning process followed:
 
-### 🔹 Initial Inspection
+### Initial Inspection
 - Reviewed dataset structure using `head()`, `info()` and missing value summary.
 - Identified that many numeric features were incorrectly stored as **object/string types**.
-### 🔹 Handling Missing Values
+### Handling Missing Values
 - Missing values detected in: Rating, Type, Android Version, Current Version.
 - These were documented and preserved or cleaned depending on analysis needs.
-### 🔹 Cleaning Individual Columns
-#### ✔ **Reviews**
+### Cleaning Individual Columns
+####  **Reviews**
 - Found non-numeric values (e.g., `"3.0M"`).
 - Removed invalid row and converted Reviews to integer.
-#### ✔ **Size**
+####   **Size**
 - Values like `"8.0M"`, `"19k"`, and `"Varies with device"`.
 - Replaced `"Varies with device"` with `NaN`.
 - Standardized sizes to numeric MB/KB format.
-#### ✔ **Installs**
+####  **Installs**
 - Contained symbols like `"+"` and commas (`"1,000+"`).
 - Removed special characters and converted to integer.
-#### ✔ **Price**
+####  **Price**
 - Contained `$` symbol.
 - Cleaned and converted to float.
-#### ✔ **Last Updated**
+####  **Last Updated**
 - Converted to proper datetime.
 - Extracted **Day**, **Month**, and **Year** from the date.
-### 🔹 Removing Duplicates
+###  Removing Duplicates
 - Found **1,181 duplicate app names**.
 - Removed all duplicate entries, keeping only the first occurrence.
-### 🔹 Final Feature Classification
+###  Final Feature Classification
 - **Numerical Columns:** Rating, Reviews, Size, Installs, Price, Day, Month, Year  
 - **Categorical Columns:** Category, Type, Content Rating, Genres  
 
 ---
 
-# 🔍 2. Exploratory Data Analysis (EDA)
+#  2. Exploratory Data Analysis (EDA)
 
 The goal of the EDA was to understand:
 - App category distribution  
@@ -56,9 +56,9 @@ The visuals below summarize the EDA process.
 
 ---
 
- # 📸 3. Visualizations & Insights
+ #  3. Visualizations & Insights
 
-### 1️⃣ Univariate Analysis — Numerical Features
+###  Univariate Analysis — Numerical Features
 ![Univariate Numerical](images/univariate-numerical.png)
 
 **Key Observations:**  
@@ -68,7 +68,7 @@ The visuals below summarize the EDA process.
 
 ---
 
-### 2️⃣ Univariate Analysis — Categorical Features
+###  Univariate Analysis — Categorical Features
 ![Categorical Univariate](images/univariate-categorical.png)
 
 **Key Observations:**  
@@ -78,7 +78,7 @@ The visuals below summarize the EDA process.
 
 ---
 
-### 3️⃣ Category Distribution (Pie Chart)
+###  Category Distribution (Pie Chart)
 ![Category Popularity](images/category-popularity.png)
 
 **Insights:**  
@@ -88,7 +88,7 @@ The visuals below summarize the EDA process.
 
 ---
 
-### 4️⃣ Top 10 App Categories (Bar Chart)
+###  Top 10 App Categories (Bar Chart)
 ![Top 10 Categories](images/top10-categories.png)
 
 **Insights:**  
@@ -98,7 +98,7 @@ The visuals below summarize the EDA process.
 
 ---
 
-### 5️⃣ Categories with the Highest Number of Installations
+###  Categories with the Highest Number of Installations
 ![Category Installations](images/category-installations.png)
 
 **Insights:**  
@@ -108,7 +108,7 @@ The visuals below summarize the EDA process.
 
 ---
 
-### 6️⃣ Top 5 Most Installed Apps in Popular Categories
+###  Top 5 Most Installed Apps in Popular Categories
 ![Top Apps by Category](images/top-apps-by-category.png)
 
 **Category-wise Insights:**
@@ -120,7 +120,7 @@ The visuals below summarize the EDA process.
 
 ---
 
-### 7️⃣ Apps With Perfect 5-Star Rating
+###  Apps With Perfect 5-Star Rating
 
 **Insights:**  
 - There are **271 apps** with a perfect **5.0 rating**.  
